@@ -17,10 +17,10 @@ services:
 
   db:
     image: postgres:14.1-alpine
-    container_name: quotes-db-api
+    container_name: dj-quotes-api-db
     environment:
       - POSTGRES_USER=postgres
       - POSTGRES_PASSWORD=258456
-      - POSTGRES_DB=quotes_db_api
+      - POSTGRES_DB=quote_db
     ports:
       - 5434:5434
